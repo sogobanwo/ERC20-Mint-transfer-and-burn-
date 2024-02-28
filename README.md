@@ -1,13 +1,36 @@
-# Sample Hardhat Project
+# ERC20 Token 
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+writing a smart contract to create ERC20 token and deploying using hardhat it using HardHat 
 
-Try running some of the following tasks:
+## Description
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.ts
+This project is simply to demonstrate the creation of ERC20 token and using 3 functions the mint, burn and transfer
+
+## Getting Started
+
+### Installing
+
+* git clone https://github.com/sogobanwo/Assessment-2
+* npm install
+
+### Executing program
+
+* 
+* Step-by-step bullets
 ```
+npx hardhat compile
+```
+
+```
+
+## Authors
+
+
+Banwo Olorunsogo
+twitter: https://twitter.com/OlorunsogoBanwo
+email: sogobanwo@gmail.com
+
+
+## License
+
+This project is licensed under the MIT License
