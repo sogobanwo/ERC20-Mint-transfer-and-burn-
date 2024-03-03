@@ -29,7 +29,7 @@ contract MyToken {
         require(msg.sender == owner, "Only Onwer can perform this transaction");
     }
 
-    function transfer(address _to, uint256 _value) public returns (bool success) {
+    function transfer(address _to, uint256 _value) external returns (bool success) {
         require( msg.sender != address(0), "Address zero cannot make a transfer");
         require( balance[msg.sender] > _value , "You don't have enough balance");
         balance[msg.sender] = balance[msg.sender] - _value;
@@ -38,7 +38,7 @@ contract MyToken {
         return true;
     }
 
-    function mint(address _to, uint256 _value) public {
+    function mint(address _to, uint256 _value) external {
         onlyOwner();
         require(_to != address(0), "Invalid address");
         require(totalSupply + _value >= totalSupply, "Overflow error");
