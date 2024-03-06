@@ -1,7 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-contract MyToken {
+import "./IERC20Token.sol";
+
+contract MyToken is IERC20Token {
     string public name;
     string public symbol;
     uint8 public decimals;
@@ -10,7 +12,6 @@ contract MyToken {
 
     mapping(address => uint256) balance;
 
-    event Transfer(address indexed from, address indexed to, uint256 value);
     event Burn(address indexed from, uint256 value);
     event Mint(address indexed to, uint256 value);
 

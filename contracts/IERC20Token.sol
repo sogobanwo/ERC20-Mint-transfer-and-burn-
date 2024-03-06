@@ -8,4 +8,5 @@ interface IERC20Token {
 
   function burn(uint256 _value) external;
 
+  event Transfer(address sender, address recipient, uint256 value);
 }
